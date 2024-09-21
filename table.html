@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: green;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:last-child {
+      background-color: #d9d9d9;
+    }
+  </style>
+</head>
+<body>
+
+<table>
+  <thead>
+    <tr>
+      <th>Product Name</th>
+      <th>Quantity</th>
+      <th>Price per Unit</th>
+      <th>Description</th>
+      <th>Total Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Product 1</td>
+      <td>2</td>
+      <td>$10</td>
+      <td>This is product 1</td>
+      <td>$20</td>
+    </tr>
+    <tr>
+      <td>Product 2</td>
+      <td>3</td>
+      <td>$20</td>
+      <td>This is product 2</td>
+      <td>$60</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="4">Sum</td>
+      <td>$80</td>
+    </tr>
+  </tfoot>
+</table>
+
+</body>
+</html>
