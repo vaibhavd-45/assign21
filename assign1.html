@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial;
+  background-color: white;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.heading {
+  text-align: center;
+  font-size: 24px;
+  color: red;
+}
+
+.drawing {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.drawing canvas {
+  background-color: transparent;
+  border: 1px solid #ccc;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1 class="heading">Heading</h1>
+
+  <div class="drawing">
+    <canvas id="myCanvas" width="200" height="200"></canvas>
+  </div>
+</div>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+// Circle
+ctx.beginPath();
+ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+ctx.stroke();
+
+// Square
+ctx.beginPath();
+ctx.rect(75, 125, 50, 50);
+ctx.stroke();
+</script>
+
+</body>
+</html>
